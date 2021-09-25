@@ -26,6 +26,7 @@ app.use(express.json());
 
 // Rutas
 app.use('/api/auth', require('./routes/auth')); // El primer parámetro indica donde voy a hacer la llamada
+app.use('/api/categories', require('./routes/categories'));
 
 
 // Escuchar peticiones

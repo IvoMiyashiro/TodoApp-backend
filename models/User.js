@@ -3,17 +3,19 @@ const { Schema, model } = require('mongoose');
 const UserSchema = Schema({
    name: {
       type: String,
-      require: true
+      required: true
    },
    email: {
       type: String,
-      require: true,
+      required: true,
       unique: true
    },
    password: {
       type: String,
-      require: true
+      required: true
    }
 });
+
+// Para sobreescribir el _id por id (sin el guion bajo)
 
 module.exports = model('User', UserSchema);
