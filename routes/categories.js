@@ -1,5 +1,5 @@
 /**
- * Rutas de Usuarios / Categories
+ * Rutas de Categories
  * host + /api/categories
  */
 
@@ -8,7 +8,7 @@ const { check } = require('express-validator');
 const { validateFields } = require('../middlewares/fields-validators');
 const { isDate } = require('../helpers/isDate');
 const { jwtValidator } = require('../middlewares/jwt-validators');
-const { createCategory, getCategory, updateCategory, deleteCategory } = require('../controllers/categories.js');
+const { createCategory, getCategory, updateCategory, deleteCategory } = require('../controllers/categories');
 
 const router = Router();
 

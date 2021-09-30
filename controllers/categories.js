@@ -4,7 +4,7 @@ const Category = require('../models/Category');
 const createCategory = async (req, res = response) => {
 
    const category = new Category(req.body);
-
+   console.log(category)
    try {
       category.user = req.uid;
       const categorySaved = await category.save();

@@ -13,6 +13,9 @@ const CategorySchema = Schema({
       type: Date,
       required: true
    },
+   notes: {
+      type: Array
+   },
    user: {
       type: Schema.Types.ObjectId,
       ref: 'User',
