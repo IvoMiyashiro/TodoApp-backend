@@ -13,7 +13,7 @@ const CategorySchema = Schema({
       type: Date,
       required: true
    },
-   notes: {
+   todos: {
       type: Array
    },
    user: {
